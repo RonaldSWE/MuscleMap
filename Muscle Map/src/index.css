@@ -1,0 +1,106 @@
+* {
+  font-family: sans-serif;
+}
+
+.sidebar {
+  width: 20%;
+  height: 95.9vh;
+  border-radius: 10px;
+  overflow: auto;
+  box-shadow: 2px 2px 5px rgb(128, 128, 128);
+  float: left;
+}
+
+.sidebar h1 {
+  text-align: center;
+  color: rgb(0, 110, 255);
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.menu {
+  display: grid;
+  font-size: 30px;
+  gap: 20px;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.menu li {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.header {
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.sub-header {
+  text-align: center;
+}
+
+.body-focus {
+  display: table;
+  margin-top: 30px;
+  padding-left: 50px;
+  font-weight: bold;
+}
+
+.body-focus img {
+  width: 100px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+#abs {
+  height: 100px;
+}
+
+#arms {
+  height: 100px;
+}
+
+.body-focus a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#change-theme-label {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+#change-theme-box {
+  margin-left: 10px;
+}
+
+.exercise-card {
+  box-shadow: 2px 2px 3px rgb(0, 0, 255);
+  display: flex;
+  border-radius: 10px;
+  width: 350px;
+  height: 150px;
+}
+
+.exercise-card h2{
+  padding-left: 200px;
+}
+
+.exercise-card p{
+  padding-top: 90px;
+  padding-right: 50px;
+}
