@@ -1,4 +1,4 @@
-function Chest(){
+const Chest = () => {
     return(
         <h1>Exercise for Chest</h1>
     )

@@ -1,4 +1,4 @@
-function Legs(){
+const Legs = () => {
     return(
         <h1>Legs</h1>
     )

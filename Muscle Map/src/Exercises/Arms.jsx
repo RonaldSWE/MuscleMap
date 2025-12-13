@@ -1,4 +1,4 @@
-function Arms(){
+const Arms = () => {
     return(
         <h1>Exercise for arms</h1>
     )

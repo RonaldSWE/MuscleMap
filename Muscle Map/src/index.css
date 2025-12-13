@@ -1,106 +1,166 @@
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+}
+
 * {
-  font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .sidebar {
-  width: 20%;
-  height: 95.9vh;
-  border-radius: 10px;
-  overflow: auto;
-  box-shadow: 2px 2px 5px rgb(128, 128, 128);
-  float: left;
+    width: 20%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border-radius: 10px;
+    overflow-y: auto;
+    box-shadow: 2px 2px 5px rgb(128, 128, 128);
+}
+
+.app-layout {
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1 1 auto;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    align-self: stretch;
 }
 
 .sidebar h1 {
-  text-align: center;
-  color: rgb(0, 110, 255);
+    text-align: center;
+    color: rgb(0, 110, 255);
 }
 
 #logo {
-  width: 50px;
-  height: 50px;
-  vertical-align: middle;
-  margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 .menu {
-  display: grid;
-  font-size: 30px;
-  gap: 20px;
-  list-style: none;
-  padding: 20px;
-  margin: 0;
-  overflow: hidden;
+    display: grid;
+    font-size: 30px;
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
 }
 
 .menu li {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 .menu a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Sidebar link styles moved from inline to CSS */
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 100%;
+}
+
+.menu-link .icon {
+    color: rgb(0, 110, 255);
+}
+
+.menu-link.active {
+    background: rgb(0, 110, 255);
+    color: #fff;
+}
+
+.menu-link.active .icon {
+    color: #fff;
+}
+
+/* Ensure sidebar allows horizontal visibility for wide content */
+.sidebar {
+    overflow-x: visible;
+}
+
+/* Make label wrap if needed but keep visible */
+.menu-link .label {
+    white-space: normal;
+    overflow: visible;
 }
 
 .header {
-  text-align: center;
-  font-size: 2.2em;
+    text-align: center;
+    font-size: 2.2em;
 }
 
 .sub-header {
-  text-align: center;
+    text-align: center;
 }
 
 .body-focus {
-  display: table;
-  margin-top: 30px;
-  padding-left: 50px;
-  font-weight: bold;
+    display: table;
+    margin-top: 30px;
+    padding-left: 50px;
+    font-weight: bold;
 }
 
 .body-focus img {
-  width: 100px;
-  border-radius: 20px;
-  margin: 10px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 #abs {
-  height: 100px;
+    height: 100px;
 }
 
 #arms {
-  height: 100px;
+    height: 100px;
 }
 
 .body-focus a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 #change-theme-label {
-  font-size: 20px;
-  margin-left: 30px;
+    font-size: 20px;
+    margin-left: 30px;
 }
 
 #change-theme-box {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .exercise-card {
-  box-shadow: 2px 2px 3px rgb(0, 0, 255);
-  display: flex;
-  border-radius: 10px;
-  width: 350px;
-  height: 150px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 255);
+    display: flex;
+    border-radius: 10px;
+    width: 350px;
+    height: 120px;
+    padding-left: 40px;
 }
 
-.exercise-card h2{
-  padding-left: 200px;
+.exercise-card p {
+    padding: 30px;
+    /* padding-right: 50px; */
 }
 
-.exercise-card p{
-  padding-top: 90px;
-  padding-right: 50px;
+.animation {
+    display: flex;
 }

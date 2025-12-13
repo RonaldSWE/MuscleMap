@@ -1,4 +1,4 @@
-function ChestAndBack(){
+const ChestAndBack = () => {
     return(
         <h1>Exercise for ChestAndBack</h1>
     )
