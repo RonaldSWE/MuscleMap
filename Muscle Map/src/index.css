@@ -138,6 +138,69 @@ body,
     color: rgb(0, 0, 0);
 }
 
+/* Training Page - Modern Grid Layout */
+.training-subtitle {
+    text-align: center;
+    color: rgb(100, 100, 100);
+    font-size: 1.1em;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.body-focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.body-focus-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.body-focus-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 110, 255, 0.2);
+}
+
+.body-focus-image-wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, rgb(240, 240, 240) 0%, rgb(255, 255, 255) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-focus-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.body-focus-label {
+    font-weight: 600;
+    font-size: 0.95em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
 #change-theme-label {
     font-size: 20px;
     margin-left: 30px;
@@ -158,9 +221,267 @@ body,
 
 .exercise-card p {
     padding: 30px;
-    /* padding-right: 50px; */
 }
 
 .animation {
     display: flex;
+}
+
+/* Mobile Responsive Design - Tablets and Below (768px and below) */
+@media (max-width: 768px) {
+    .app-layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        border-radius: 0;
+        overflow-y: visible;
+        overflow-x: auto;
+        box-shadow: none;
+        border-bottom: 1px solid rgb(200, 200, 200);
+    }
+
+    .sidebar h1 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    #logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+        gap: 5px;
+        padding: 10px 15px;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .menu li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-link {
+        gap: 4px;
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .main {
+        flex: 1;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .header {
+        font-size: 1.8em;
+    }
+
+    .sub-header {
+        font-size: 1em;
+    }
+
+    .training-subtitle {
+        font-size: 0.95em;
+        margin-bottom: 20px;
+    }
+
+    .body-focus-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .body-focus-card {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .body-focus-image-wrapper {
+        width: 85px;
+        height: 85px;
+        margin-bottom: 10px;
+    }
+
+    .body-focus-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .body-focus-label {
+        font-size: 0.85em;
+    }
+
+    .body-focus {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding-left: 0;
+        padding: 10px;
+        font-weight: bold;
+        justify-content: center;
+    }
+
+    .body-focus img {
+        width: 80px;
+        border-radius: 15px;
+        margin: 8px;
+    }
+
+    #change-theme-label {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    #change-theme-box {
+        margin-left: 5px;
+    }
+
+    .exercise-card {
+        width: 100%;
+        height: auto;
+        padding-left: 20px;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .exercise-card p {
+        padding: 15px;
+        margin: 0;
+    }
+
+    .animation {
+        flex-direction: column;
+    }
+}
+
+/* Extra Small Devices - Phones (480px and below) */
+@media (max-width: 480px) {
+    .sidebar {
+        border-bottom: 1px solid rgb(200, 200, 200);
+    }
+
+    .sidebar h1 {
+        font-size: 1.3em;
+        margin: 8px 0;
+    }
+
+    #logo {
+        width: 30px;
+        height: 30px;
+        margin-right: 3px;
+    }
+
+    .menu {
+        font-size: 14px;
+        gap: 3px;
+        padding: 8px 10px;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    .menu-link {
+        gap: 3px;
+        padding: 5px 8px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .menu-link .label {
+        display: none;
+    }
+
+    .menu-link .icon {
+        font-size: 20px;
+    }
+
+    .main {
+        padding: 12px;
+    }
+
+    .header {
+        font-size: 1.5em;
+    }
+
+    .sub-header {
+        font-size: 0.9em;
+    }
+
+    .training-subtitle {
+        font-size: 0.85em;
+        margin-bottom: 15px;
+    }
+
+    .body-focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    .body-focus-card {
+        padding: 12px;
+        border-radius: 9px;
+    }
+
+    .body-focus-card:active {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 110, 255, 0.15);
+    }
+
+    .body-focus-image-wrapper {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 8px;
+    }
+
+    .body-focus-image {
+        width: 65px;
+        height: 65px;
+    }
+
+    .body-focus-label {
+        font-size: 0.8em;
+    }
+
+    .body-focus {
+        padding: 8px;
+        margin-top: 15px;
+    }
+
+    .body-focus img {
+        width: 70px;
+        border-radius: 12px;
+        margin: 6px;
+    }
+
+    #abs,
+    #arms {
+        height: 70px;
+    }
+
+    #change-theme-label {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .exercise-card {
+        padding-left: 15px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    .exercise-card p {
+        padding: 12px;
+        font-size: 14px;
+    }
 }
