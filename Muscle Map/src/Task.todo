@@ -1,0 +1,36 @@
+Animation:
+    ☐ Get all animations
+
+    Animation 1-1:
+        ☐ Get Animations for Abs Beginner
+        ☐ Get Animations for Abs Intermediate
+        ☐ Get Animations for Abs Advanced
+
+    Animation 1-2:
+        ☐ Get Animations for Arms Beginner
+        ☐ Get Animations for Arms Intermediate
+        ☐ Get Animations for Arms Advanced
+
+    Animation 1-3:
+        ☐ Get Animations for Chest Beginner
+        ☐ Get Animations for Chest Intermediate
+        ☐ Get Animations for Chest Advanced
+
+    Animation 1-3:
+        ☐ Get Animations for Legs Beginner
+        ☐ Get Animations for Legs Intermediate
+        ☐ Get Animations for Legs Advanced
+
+    Animation 1-3:
+        ☐ Get Animations for Shoulder and Back Beginner
+        ☐ Get Animations for Shoulder and Back Intermediate
+        ☐ Get Animations for Shoulder and Back Advanced
+
+MealPlanner:
+    ✔ Generate area for height and weight input
+    ☐ Generate area for type of meals you eat(Vegetarian or Omniterian)
+    ☐ Generate area for displaying the results of the type of food to eat
+
+Settings:
+    ☐ Place to switch between light and dark mode
+    ☐ Place to switch between languages
