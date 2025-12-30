@@ -1,15 +1,31 @@
 import { Link } from "react-router-dom";
 
-function Training() {
+const Training = () => {
     const bodyParts = [
-        { name: "Abs", path: "/training/abs", img: "src/assets/Abs.png" },
-        { name: "Arms", path: "/training/arms", img: "src/assets/Arms.png" },
-        { name: "Chest", path: "/training/chest", img: "src/assets/Chest.png" },
-        { name: "Legs", path: "/training/legs", img: "src/assets/Legs.jpeg" },
+        {
+            name: "Abs",
+            path: "/training/abs",
+            img: "src/assets/Images/Abs.png",
+        },
+        {
+            name: "Arms",
+            path: "/training/arms",
+            img: "src/assets/Images/Arms.png",
+        },
+        {
+            name: "Chest",
+            path: "/training/chest",
+            img: "src/assets/Images/Chest.png",
+        },
+        {
+            name: "Legs",
+            path: "/training/legs",
+            img: "src/assets/Images/Legs.jpeg",
+        },
         {
             name: "Shoulder & Back",
             path: "/training/shoulder-and-back",
-            img: "src/assets/Shoulder and back.png",
+            img: "src/assets/Images/Shoulder and back.png",
         },
     ];
 
@@ -40,6 +56,6 @@ function Training() {
             </div>
         </>
     );
-}
+};
 
 export default Training;

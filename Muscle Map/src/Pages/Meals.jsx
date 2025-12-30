@@ -9,12 +9,18 @@ function Meals() {
                     className="input"
                 />
                 <br />
-                <br />
                 <input
                     type="number"
                     placeholder="Enter your height in ft"
                     className="input"
                 />
+                <br />
+                <input
+                    type="text"
+                    placeholder="Are you a vegetarian?"
+                    className="input"
+                />
+                <button>Submit</button>
             </form>
         </>
     );

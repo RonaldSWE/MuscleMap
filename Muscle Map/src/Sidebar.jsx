@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell, faBowlFood, faCog } from "@fortawesome/free-solid-svg-icons";
-import logo from "./assets/Muscle Map Logo.png";
+import logo from "./assets/Images/Muscle Map Logo.png";
 
 const Sidebar = () => {
     return (

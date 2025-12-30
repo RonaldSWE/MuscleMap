@@ -1,3 +1,4 @@
+import { Routes, Route } from "react-router-dom";
 import Sidebar from "./Sidebar.jsx";
 import Training from "./Pages/Training.jsx";
 import Meals from "./Pages/Meals.jsx";
@@ -7,7 +8,6 @@ import Arms from "./Exercises/Arms.jsx";
 import Chest from "./Exercises/Chest.jsx";
 import Legs from "./Exercises/Legs.jsx";
 import ShoulderAndBack from "./Exercises/ShoulderAndBack.jsx";
-import { Routes, Route } from "react-router-dom";
 
 const App = () => {
     return (

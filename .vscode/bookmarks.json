@@ -4,19 +4,19 @@
 			"path": "Muscle Map/src/index.css",
 			"bookmarks": [
 				{
-					"line": 248,
+					"line": 268,
 					"column": 0,
-					"label": "Media query for 1000px below"
+					"label": "Media Query for 1000px below"
 				},
 				{
-					"line": 400,
+					"line": 439,
 					"column": 0,
-					"label": "Media query for 768px below"
+					"label": "Media Query for 768px below"
 				},
 				{
-					"line": 551,
+					"line": 596,
 					"column": 0,
-					"label": "Media query for 480px below"
+					"label": "Media Query for 480px below"
 				}
 			]
 		}

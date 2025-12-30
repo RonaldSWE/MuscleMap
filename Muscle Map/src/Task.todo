@@ -28,9 +28,8 @@ Animation:
 
 MealPlanner:
     ✔ Generate area for height and weight input
-    ☐ Generate area for type of meals you eat(Vegetarian or Omniterian)
+    ✔ Generate area for type of meals you eat(Vegetarian or Omniterian)
     ☐ Generate area for displaying the results of the type of food to eat
 
 Settings:
-    ☐ Place to switch between light and dark mode
     ☐ Place to switch between languages
