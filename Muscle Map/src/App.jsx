@@ -10,27 +10,27 @@ import Legs from "./Exercises/Legs.jsx";
 import ShoulderAndBack from "./Exercises/ShoulderAndBack.jsx";
 
 const App = () => {
-    return (
-        <div className="app-layout">
-            <Sidebar />
+  return (
+    <div className="app-layout">
+      <Sidebar />
 
-            <main className="main">
-                <Routes>
-                    <Route path="/" element={<Training />} />
-                    <Route path="/meals" element={<Meals />} />
-                    <Route path="/settings" element={<Settings />} />
-                    <Route path="/training/abs" element={<Abs />} />
-                    <Route path="/training/arms" element={<Arms />} />
-                    <Route path="/training/chest" element={<Chest />} />
-                    <Route path="/training/legs" element={<Legs />} />
-                    <Route
-                        path="/training/shoulder-and-back"
-                        element={<ShoulderAndBack />}
-                    />
-                </Routes>
-            </main>
-        </div>
-    );
-}
+      <main className="main">
+        <Routes>
+          <Route path="/" element={<Training />} />
+          <Route path="/meals" element={<Meals />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/training/abs" element={<Abs />} />
+          <Route path="/training/arms" element={<Arms />} />
+          <Route path="/training/chest" element={<Chest />} />
+          <Route path="/training/legs" element={<Legs />} />
+          <Route
+            path="/training/shoulder-and-back"
+            element={<ShoulderAndBack />}
+          />
+        </Routes>
+      </main>
+    </div>
+  );
+};
 
 export default App;

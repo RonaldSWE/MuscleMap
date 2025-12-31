@@ -1,7 +1,5 @@
 const Chest = () => {
-    return(
-        <h1>Exercise for Chest</h1>
-    )
-}
+  return <h1>Exercise for Chest</h1>;
+};
 
-export default Chest
+export default Chest;
